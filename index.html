@@ -3,45 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Previsão do Tempo - Black em Dobro</title>
-
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="./src/css/reset.css" />
-    <link rel="stylesheet" href="./src/css/estilos.css" />
+    <title>Previsão do tempo - Black em Dobro</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700&display=swap"
       rel="stylesheet"
     />
-  </head>
 
+    <link rel="stylesheet" href="./src/css/reset.css" />
+
+    <link rel="stylesheet" href="./src/css/estilos.css" />
+  </head>
   <body>
     <main class="container">
       <div class="busca">
-        <input type="text" placeholder="Digite uma cidade" id="input-busca" />
+        <input type="text" id="input-busca" placeholder="Digite uma cidade" />
+
         <button class="btn-busca">
-          <img src="./src/imagens/lupa.png" class="lupa" alt="lupa da busca" />
+          <img class="lupa" src="./src/imagens/lupa.png" alt="lupa da busca" />
         </button>
       </div>
-
       <div class="informacao-principal">
         <h1 id="cidade">Use a lupa acima para ver o clima em uma cidade</h1>
 
-        <p class="temperatura" id="numero-temperatura"></p>
+        <p class="temperatura" id="temperatura"></p>
 
         <img
           id="icone-condicao"
           src="https://cdn.weatherapi.com/weather/64x64/day/116.png"
-          alt="Ícone condição do clima"
+          alt="icone condição do clima"
         />
 
         <p class="condicao" id="condicao"></p>
       </div>
-
       <div class="informacao-secundaria">
         <div class="humidade">
           <span>Humidade</span>
@@ -49,7 +45,7 @@
         </div>
 
         <div class="velocidade-do-vento">
-          <span>Velocidade do vento</span>
+          <span>Velocidade do Vento</span>
           <span id="velocidade-do-vento">--</span>
         </div>
       </div>
