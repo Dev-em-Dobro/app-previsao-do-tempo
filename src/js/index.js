@@ -28,7 +28,7 @@ async function buscarDadosDaCidade(cidade) {
 function preencherDadosNaTela(dados, cidade) {
   const temperatura = Math.round(dados.current.temp_c);
   const condicao = dados.current.condition.text;
-  const humidade = dados.current.humidity;
+  const umidade = dados.current.humidity;
   const velocidadeDoVento = dados.current.wind_kph;
   const iconeCondicao = dados.current.condition.icon;
 
@@ -38,7 +38,7 @@ function preencherDadosNaTela(dados, cidade) {
 
   document.getElementById("condicao").textContent = condicao;
 
-  document.getElementById("humidade").textContent = `${humidade}%`;
+  document.getElementById("umidade").textContent = `${umidade}%`;
 
   document.getElementById(
     "velocidade-do-vento"
